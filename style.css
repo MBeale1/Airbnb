@@ -1,0 +1,182 @@
+body{
+  background-color: rgb(109, 11, 148);
+  /* background-image: url("./treehouse.jpeg"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+input{
+  border: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: white;
+}
+header a{
+  color: white;
+  font-weight: bold;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+.logo i{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.head-middle{
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+.head-middle a{
+  padding: 0 4px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 33%;
+}
+.lang{
+  display: flex;
+}
+.minus{
+  display: none;
+}
+.lang:hover .down{
+  display: none;
+}
+.lang:hover .minus{
+  display: inline;
+}
+
+.log{
+  background-color: rgb(255, 255, 255);
+  color: grey;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 0 15%;
+  /* justify-content: space-between; */
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 15px 10px 10px;
+}
+.search-bar p{
+  margin: 1px;
+}
+.location{
+  width: 31%;
+}
+.checkin{
+  width: 25%
+}
+.checkout{
+  width: 25%
+}
+.guests{
+  width: 25%;
+}
+.search-bar input{
+  width: 80%;
+}
+
+.search-bar i{
+  background-color: rgb(241, 92, 76);
+  padding: 10px;
+  border-radius: 50%;
+}
+.middle{
+  margin: 20vh 10vw;
+  width:35%;
+  font-weight: bold;
+  color: white;
+}
+.middle a{
+  color: black;
+  background-color:white;
+  padding: 5px 7px;
+  border-radius: 10px;
+
+}
+
+
+
+
+.bottom-bar{
+  background-color: white;
+  justify-content: space-evenly;
+  display: none;
+
+  position: sticky;
+  bottom: 0;
+}
+.bottom-bar div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.bottom-bar p{
+  margin: 0;
+  color: gray;
+}
+.bottom-bar i{
+  color: black;
+}
+.bottom-bar .explore i{
+  color: rgb(241, 92, 76);
+}
+.bottom-bar .explore:hover p{
+  color: black;
+}
+.bottom-bar .saved:hover p{
+  color: black;
+}
+.bottom-bar .saved:hover i{
+  color: rgb(241, 92, 76);
+}
+.bottom-bar .login:hover p{
+  color: black;
+}
+.bottom-bar .login:hover i{
+  color: rgb(241, 92, 76);
+}
+
+@media screen and (max-width: 735px){
+  header{justify-content: space-between;}
+  header .head-middle{display: none;}
+  
+  /* .search-bar i{justify-content: flex-end;} */
+  
+}
+@media screen and (max-width: 630px){
+  .search-bar div{display: none;}
+  .bottom-bar{display: flex;}
+}
+@media screen and (max-width: 600px){
+  header{display: none;}
+  .middle{
+    width: 40%;
+    margin: 0 30%;
+  }
+
+}
